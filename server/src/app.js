@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 app.post('/register', (req, res) => {
-  res.json({ 'message': 'hi' })
+  res.send({ message: `${req.body.email}` })
 })
 
 app.listen(process.env.PORT || 8081)
