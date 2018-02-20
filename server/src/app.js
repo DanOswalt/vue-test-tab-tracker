@@ -17,12 +17,3 @@ sequelize.sync()
     app.listen(config.port)
     console.log(`Server started on port ${config.port}`)
   })
-
-// sequelize
-//   .authenticate()
-//   .then(() => {
-//     console.log('Connection has been established successfully.')
-//   })
-//   .catch(err => {
-//     console.error('Unable to connect to the database:', err)
-//   })
